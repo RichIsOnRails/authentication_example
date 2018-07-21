@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
-  skip_before_action :require_valid_user!
   before_action :reset_session
+  skip_before_action :require_valid_user!
+  
 
   def new
     @user = User.new
@@ -10,9 +11,8 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      session[:user_id] = @user.id
-      flash[:success] =  'You have successfully created an account!'
-      redirect_to root_path
+      flash[:success] =  'You have successfully created an account.  Please sign in to continue.'
+      redirect_to login_path
     else
       render :new
     end

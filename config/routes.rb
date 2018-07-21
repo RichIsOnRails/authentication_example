@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'dashboard#show'
 
+  get 'users/new'
   get 'login', to: 'sessions#new'
   get 'logout', to: 'sessions#destroy'
 
