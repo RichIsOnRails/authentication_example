@@ -1,24 +1,3 @@
-# README
+# RichOnRails.com - Building an Authentication From Scratch Example
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+See [https://richonrails.com/articles/building-an-authentication-system-from-scratch](https://richonrails.com/articles/building-an-authentication-system-from-scratch) for details.
